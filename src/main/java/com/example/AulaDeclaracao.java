@@ -20,5 +20,7 @@ public class AulaDeclaracao {
         System.out.println("Possui necessidades especiais: " + NecessidadesEspeciais);
 
         //Usar var NomeDaVariavel funciona a partir do Java 10, pois o compilador detecta o tipo de variável automaticamente
+
+        
     }
 }
