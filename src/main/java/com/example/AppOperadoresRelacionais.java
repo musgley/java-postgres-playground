@@ -18,16 +18,19 @@ public class AppOperadoresRelacionais {
             System.out.println("O ano de nascimento do cliente 2 é " + cliente2.getAnoNascimento() + ".");
         }
 
-        if (cliente1.getAnoNascimento() > cliente2.getAnoNascimento()) {
+        boolean cliente1MaisJovem = cliente1.getAnoNascimento() > cliente2.getAnoNascimento();
+        boolean cliente2MaisJovem = cliente1.getAnoNascimento() < cliente2.getAnoNascimento();
+        
+        if (cliente1MaisJovem) {
             System.out.println("O cliente 1 é mais jovem que o cliente 2.");
         }
 
-        else if (cliente1.getAnoNascimento() == cliente2.getAnoNascimento()){
-            System.out.println("Os clientes têm a mesma idade.");
+        else if (cliente2MaisJovem){
+            System.out.println("O cliente 2 é mais jovem que o cliente 1.");
         }
 
         else
-            System.out.println("O cliente 2 é mais jovem que o cliente 1.");
+            System.out.println("Os clientes têm a mesma idade");
             
 
     }
