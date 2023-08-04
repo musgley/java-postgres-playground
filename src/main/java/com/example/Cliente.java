@@ -10,7 +10,7 @@ public class Cliente {
     private int anoNascimento;
     
     public Cliente(){ //Métodos construtores precisam ser chamados public MetodoConstrutor(), se public void Cliente() ele não é chamado
-        System.out.println("Criando um cliente usando o construtor sem parâmetros");
+        //System.out.println("Criando um cliente usando o construtor sem parâmetros");
         double aleatorio = Math.random();
         if(aleatorio > 0.5)
             especial = true;
@@ -19,7 +19,7 @@ public class Cliente {
     }
     public Cliente(double renda, char sexo){ //Métodos construtores precisam ser chamados public MetodoConstrutor(), se public void Cliente() ele não é chamado
         this(); //this() deve ser na primeira linha e ele chama o construtor anterior, geralmente menos complexo, para evitar duplicidade de código
-        System.out.println("Criando um cliente usando o construtor com parâmetros");
+        //System.out.println("Criando um cliente usando o construtor com parâmetros");
         setRenda(renda);
         this.sexo = sexo;
     }
