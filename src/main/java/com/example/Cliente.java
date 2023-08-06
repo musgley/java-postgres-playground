@@ -76,4 +76,8 @@ public class Cliente {
         else 
             System.out.println("A renda não pode ser negativa.");
     }
+
+    public String toString(){
+        return "Cliente: " + nome + " Cidade: " + cidade;
+    }
 }
